@@ -59,7 +59,7 @@ The `getRating` method returns the rating of the place as a float. It first make
 ### getUserRatingsTotal(): ?int
 The `getUserRatingsTotal` method returns the total number of user ratings of the place as an integer. It first makes a request to the Google Places API using the makeRequest method. If the response status code is 200, it decodes the JSON response and returns the user_ratings_total field. If the response status code is not 200, it returns null.
 
-### Google API Rate limit
+## Google API Rate limit
 Yes, there are rate limits and quotas on Google Places API requests. According to the Google Places API documentation, the free tier of the Google Places API allows for up to 150,000 free requests per day, with a limit of 50 requests per second. If you exceed these limits, you will receive a 403 INSUFFICIENT_TOKENS error response.
 
 If you need to make more requests than the free tier allows, you can upgrade to a paid plan, which offers higher rate limits and quotas. The pricing for the paid plans is based on the number of requests and the level of support you need.
